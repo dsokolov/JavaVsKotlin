@@ -1,4 +1,4 @@
-package com.example;
+package me.ilich.javavskotlin;
 
 public class JavaApp {
 
@@ -7,6 +7,19 @@ public class JavaApp {
         Summator summator = new Summator(1, 2);
         String s = "sum = " + summator.sum();
         System.out.println(s);
+        KotlinUser user = new KotlinUser("1", 2);
+
+
+        final int a;
+        if (s.length() == 5) {
+            a = 10;
+        } else {
+            a = 8;
+        }
+
+        int b = s.length() == 5 ? 10 : 8;
+
+        UrilsKt.sayHello("asdf");
     }
 
     static class Summator {
